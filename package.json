@@ -1,0 +1,18 @@
+{
+  "name": "right-way",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass-lint -c ./.sass-lint.yml 'src/assets/scss/**/*.scss' -v -q && node ./sass.js"
+  },
+  "author": "Adam Wojda",
+  "license": "MIT",
+  "dependencies": {
+    "bourbon": "^6.0.0",
+    "sass-lint": "^1.13.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
