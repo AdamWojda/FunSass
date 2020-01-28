@@ -23,7 +23,7 @@ rules:
     - 1
     - include: false
   indentation:
-    - 2
+    - 1
     -
       size: 4
   zero-unit:
