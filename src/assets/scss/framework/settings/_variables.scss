@@ -1,0 +1,65 @@
+/*
+ * Framework settings.
+ */
+
+/// Choose classes type, short: .al-itm__center, long: .align-items__center
+/// @access private
+/// @group variables
+/// @since 1.0
+$classes-names: 'short' !default;
+
+/// This is base size for the whole website, fully scalable rem.
+/// @access private
+/// @group variables
+/// @since 1.0
+$base-size: 20px !default;
+
+/// This defines maximum width of a container based layout.
+/// @access private
+/// @group variables
+/// @since 1.0
+$container-width: 1320px !default;
+
+/// Baseline.
+/// @access private
+/// @group variables
+/// @since 1.0
+$line-height: $base-size !default;
+
+/// Grid desktop reference size.
+/// @access private
+/// @group variables
+/// @since 1.0
+$grid-desktop: 1rem !default;
+
+/// Grid mobile reference size.
+/// @access private
+/// @group variables
+/// @since 1.0
+$grid-mobile: .5rem !default;
+
+/// Mobile baseline with be scaled with that values.
+/// @access private
+/// @group variables
+/// @since 1.0
+$mobile-baselines: (
+    'xl': $line-height * 1.1,
+    'l': $line-height * 1,
+    'm': $line-height * .95,
+    's': $line-height * .9,
+    'xs': $line-height * .85
+) !default;
+
+/// Define supported mobile breakpoints and their values
+/// Based on this will be generated a lot of classes, so keep that in mind.
+/// @access private
+/// @group variables
+/// @since 1.0
+$mobile-breakpoints: (
+    'xs': 360px,
+    's': 440px,
+    'm': 768px,
+    'l': 1024px,
+    'xl': 1440px
+) !default;
+

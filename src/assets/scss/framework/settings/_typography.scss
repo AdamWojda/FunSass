@@ -1,0 +1,174 @@
+/*
+ * Typography settings.
+ */
+
+/// Text align properties
+/// @access private
+/// @group typography
+/// @since 1.0
+/// @example css - Resulting CSS
+/// .text-align__left {
+///     text-align: left;
+/// }
+/// .text-align__right {
+///     text-align: right;
+/// }
+/// .text-align__center {
+///     text-align: center;
+/// }
+/// .text-align__justify {
+///     text-align: justify;
+/// }
+$text-align: ( left, right, center, justify );
+
+/// Text transform properties
+/// @access private
+/// @group typography
+/// @since 1.0
+/// @example css - Resulting CSS
+/// .text-transform__first-letter {
+///     text-transform: first-letter;
+/// }
+/// .text-transform__capitalize {
+///     text-transform: capitalize;
+/// }
+/// .text-transform__uppercase {
+///     text-transform: uppercase;
+/// }
+/// .text-transform__lowercase {
+///     text-transform: lowercase;
+/// }
+$text-transform: ( first-letter, capitalize, lowercase, uppercase, none );
+
+/// Font style properties
+/// @access private
+/// @group typography
+/// @since 1.0
+/// @example css - Resulting CSS
+/// .font-variant__normal {
+///     font-style: normal;
+/// }
+/// .font-style__italic {
+///     font-style: italic;
+/// }
+/// .font-style__oblique {
+///     font-style: oblique;
+/// }
+$font-style: ( normal, italic, oblique );
+
+/// Font variant properties
+/// @access private
+/// @group typography
+/// @since 1.0
+/// @example css - Resulting CSS
+/// .font-style__normal {
+///     font-variant: normal;
+/// }
+/// .font-variant__small-caps {
+///     font-variant: small-caps;
+/// }
+/// .font-variant__initial {
+///     font-variant: initial;
+/// }
+$font-variant: ( normal, small-caps, initial );
+
+/// Just a default list of supported font-weights.
+/// You should only use alphabetical names across the stylesheets.
+/// @access private
+/// @group typography
+/// @since 1.0
+/// @example css - Resulting CSS
+/// .font-weight__thin {
+///     font-weight: 100;
+/// }
+/// .font-weight__regular {
+///     font-weight: 400;
+/// }
+/// .font-weight__black {
+///     font-weight: 900;
+/// }
+$font-weights: (
+    'thin': 100,
+    'light': 300,
+    'regular': 400,
+    'medium': 500,
+    'bold': 700,
+    'black': 900
+) !default;
+
+/// Set options for global headings, create new heading types.
+/// You may add a new header class to custom key in headings.
+/// In standard rules you should focus on changing type params.
+/// @access private
+/// @group typography
+/// @since 1.0
+/// @example css - Resulting CSS
+/// .about-us-header {
+///     font-size: 1.33rem;
+///     font-weight: 900;
+///     line-height: 1rem;
+///     letter-spacing: .5rem;
+///     text-indent: -.5rem;
+/// }
+/// h1, .h1 {
+///     font-size: 2rem;
+///     font-weight: 700;
+///     line-height: 1rem;
+///     letter-spacing: .5rem;
+///     text-indent: -.5rem;
+/// } etc...
+$headings: (
+    'custom': (
+        'about-us-header': (
+            font-size: 1.33rem,
+            font-weight: 'black',
+            line-height: 1rem,
+            letter-spacing: .5rem,
+            text-indent: -.5rem,
+        ),
+    ),
+    'standard': (
+        'h1': (
+            font-size: 2rem,
+            font-weight: 'bold',
+            line-height: 1.8rem,
+            letter-spacing: 0,
+            text-indent: -0
+        ),
+        'h2': (
+            font-size: 1.75rem,
+            font-weight: 'medium',
+            line-height: 1.7rem,
+            letter-spacing: 0,
+            text-indent: -0
+        ),
+        'h3': (
+            font-size: 1.5rem,
+            font-weight: 'regular',
+            line-height: 1.6rem,
+            letter-spacing: 0,
+            text-indent: -0
+        ),
+        'h4': (
+            font-size: 1.25rem,
+            font-weight: 'regular',
+            line-height: 1.5rem,
+            letter-spacing: 0,
+            text-indent: -0
+        ),
+        'h5': (
+            font-size: 1rem,
+            font-weight: 'regular',
+            line-height: 1.4rem,
+            letter-spacing: 0,
+            text-indent: -0
+        ),
+        'h6': (
+            font-size: .75rem,
+            font-weight: 'regular',
+            line-height: 1.3rem,
+            letter-spacing: 0,
+            text-indent: -0
+        ),
+    ),
+) !default;
